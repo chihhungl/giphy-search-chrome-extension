@@ -84,7 +84,7 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h4>Search Giphy</h4>
+          <p><strong>Search Giphy</strong></p>
         </header>
         <p>
           <input
