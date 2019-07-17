@@ -54,6 +54,14 @@ export default class App extends React.Component {
     this.setState({ inputValue: ev.target.value });
   }
 
+  onKeyDown = (ev) => {
+    if (ev.key === 'Enter') {
+      ev.preventDefault();
+      ev.stopPropagation();
+      this.onSearchButtonClick();
+    }
+  }
+
   onSearchButtonClick = async () => {
     const { prevInputValue, inputValue, index } = this.state;
 
@@ -91,6 +99,7 @@ export default class App extends React.Component {
             placeholder="search..."
             value={inputValue}
             onChange={this.onInputChange}
+            onKeyDown={this.onKeyDown}
           >
           </input>
           <button
