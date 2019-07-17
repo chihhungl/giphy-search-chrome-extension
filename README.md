@@ -8,7 +8,8 @@
 ### Step 1: Build
   1. Clone/download this repo
   2. Navigate to the directory
-  3. Run `npm run build` or `yarn build` (Make sure you have one of them installed)
+  3. Run `npm run install` to install the dependencies
+  4. Run `npm run build` to build the app
 
 ### Step 2: Add it to chrome
   1. Open chrome
