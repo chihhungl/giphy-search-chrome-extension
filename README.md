@@ -5,11 +5,16 @@
 
 ## How to use?
 
+### Step 0: Get an API KEY from giphy.com
+  1. [Link]([Link](https://support.giphy.com/hc/en-us/articles/360020283431-Request-A-GIPHY-API-Key))
+  2. Copy the api key, you'll need it soon.
 ### Step 1: Build
   1. Clone/download this repo
   2. Navigate to the directory
-  3. Run `npm install` to install the dependencies
-  4. Run `npm run build` to build the app
+  3. Run `sed 's/shhhhh/vTIpYBc3I5jgBnqWKy1SMccAAXfpSRvy/' ./src/secret.js.tmpl > ./src/secret.js` to generate `secret.js` which will include your giphy api key.
+  4. Open src/secret.js in your favorite text editor.
+  5. Run `npm install` to install the dependencies
+  6. Run `npm run build` to build the app
 
 ### Step 2: Add it to chrome
   1. Open chrome
