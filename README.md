@@ -11,7 +11,7 @@
 ### Step 1: Build
   1. Clone/download this repo
   2. Navigate to the directory
-  3. Run `sed 's/shhhhh/vTIpYBc3I5jgBnqWKy1SMccAAXfpSRvy/' ./src/secret.js.tmpl > ./src/secret.js` to generate `secret.js` which will include your giphy api key.
+  3. Run `sed 's/shhhhh/<YOUR API KEY>/' ./src/secret.js.tmpl > ./src/secret.js` to generate `secret.js` which will include your giphy api key.
   4. Open src/secret.js in your favorite text editor.
   5. Run `npm install` to install the dependencies
   6. Run `npm run build` to build the app
